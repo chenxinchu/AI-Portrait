@@ -1,0 +1,52 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "AI 文心绘画",
+				"backgroundColor": "#1c2438"
+			}
+		},
+		// {
+		// 	"path": "pages/list/index",
+		// 	"style": {
+		// 		"navigationBarTitleText": "艺术展"
+		// 	}
+		// },
+		{
+			"path": "pages/portdir/index",
+			"style": {
+				"navigationBarTitleText": "我的画夹"
+			}
+		},
+		{
+			"path": "pages/portdetail/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "#fff",
+		"navigationBarTitleText": "AI 文心绘画",
+		"navigationBarBackgroundColor": "#1c2438",
+		"backgroundColor": "#1c2438"
+	},
+	"tabBar": {
+        "color": "#fff", // tab 上的文字默认颜色
+        "selectedColor": "#409eff", // tab 上的文字选中时的颜色
+        "borderStyle": "black", // tabbar 上边框的颜色，可选值 black/white
+        "backgroundColor": "#1c2438",  // tab 的背景色
+        "list": [{ // 最少2个、最多5个 tab
+            "pagePath": "pages/index/index", // 页面路径，必须在 pages 中先定义
+            "iconPath": "static/home-l.png", // 图片路径，icon 大小限制为40kb，建议尺寸为 81px * 81px
+            "selectedIconPath": "static/home-d.png", // 选中时的图片路径
+            "text": "首页" // tab 上按钮文字
+        }, {
+            "pagePath": "pages/portdir/index",
+            "iconPath": "static/file-l.png",
+            "selectedIconPath": "static/file-d.png",
+            "text": "画夹"
+        }]
+    }
+}
